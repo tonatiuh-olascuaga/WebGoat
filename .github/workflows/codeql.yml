@@ -71,7 +71,7 @@ jobs:
           java-version: 17
           architecture: x64
                  
-    - if: matrix.language == 'java' 
+    - if: matrix.language == 'kotlin' 
       name: Build with Maven
       run: mvn -B package --file pom.xml
 
